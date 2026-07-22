@@ -5,55 +5,23 @@ weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 
 ### Mục tiêu tuần 10:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hoàn tất Epic 4 (Mermaid Mindmap).
+* Thực thi Task Nhóm 1: Dọn dẹp nợ kỹ thuật (Tech Debt).
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Phát triển logic Backend sinh mã Mermaid.js tóm tắt nội dung <br> - Tích hợp thư viện `mermaid` (^11.15.0) trên Frontend | 19/06/2026 | 19/06/2026 | Mermaid.js Docs |
+| 3 | - Task 1.1: Sửa lỗi 404 trang Thư viện cá nhân (`fe/app/library/page.tsx`, `fe/middleware.ts`) | 20/06/2026 | 20/06/2026 | Next.js Routing |
+| 4 | - Task 1.2: Bảo vệ Endpoint `GET /job/{jobId}` <br> - Áp dụng JWT Authorizer vào `be/lib/be-stack.ts` | 21/06/2026 | 21/06/2026 | AWS CDK Auth |
+| 5 | - Task 1.3: Dọn dẹp mã nguồn <br>&emsp; + Xóa Debug Panel ở `UploadView.tsx` <br>&emsp; + Gỡ hardcode ARN AWS Secrets Manager | 22/06/2026 | 22/06/2026 | AWS Secrets Manager |
+| 6 | - Task 1.3: Kích hoạt Cache TTL 300s cho Lambda Authorizer trên Production <br> - Review toàn bộ code tồn đọng | 23/06/2026 | 23/06/2026 | AWS API Gateway Caching |
 
 ### Kết quả đạt được tuần 10:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Tính năng vẽ Mindmap bằng Mermaid hoạt động tốt.
+* Giải quyết xong toàn bộ lỗi kỹ thuật nghiêm trọng (Bảo mật JWT cho Job endpoint, lỗi 404 trang Thư viện).
+* Dự án sẵn sàng và an toàn để triển khai đa môi trường (Dev/Prod).

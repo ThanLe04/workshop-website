@@ -5,53 +5,22 @@ weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 4 Objectives:
+* Start Epic 2: User Authentication.
+* Protect Backend APIs and manage sessions.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
-
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+### Tasks to Deploy This Week:
+| Day | Task | Start Date | Completion Date | Documentation Source |
+| --- | --- | --- | --- | --- |
+| 2 | - Integrate `NextAuth.js` (v5.0.0-beta.31) into Frontend <br> - Set up Google OAuth Provider | 08/05/2026 | 08/05/2026 | NextAuth Docs |
+| 3 | - Set up Email OTP authentication (using HMAC signature) <br> - Create Login / Register pages | 09/05/2026 | 09/05/2026 | NextAuth Email Auth |
+| 4 | - Write Custom Lambda Authorizer on Backend <br> - Apply `crypto.subtle` for JWT verification (HS256 algorithm) | 10/05/2026 | 10/05/2026 | AWS Lambda Authorizer |
+| 5 | - Configure API Gateway to use the newly created Lambda Authorizer <br> - Enforce Frontend to attach Bearer Token | 11/05/2026 | 11/05/2026 | AWS API Gateway |
+| 6 | - Test unauthenticated access restriction flows (Next.js Middleware) <br> - Block upload features for unauthenticated users | 12/05/2026 | 12/05/2026 | Next.js Middleware |
 
 ### Week 4 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* The Stateless JWT login system operates successfully with Google OAuth and OTP.
+* Backend is securely protected via Custom Lambda Authorizer without external dependencies.
+* API Gateway successfully validates authorized requests from Frontend.

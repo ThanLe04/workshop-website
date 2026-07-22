@@ -5,54 +5,22 @@ weight: 2
 chapter: false
 pre: " <b> 1.12 </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 ### Mục tiêu tuần 12:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hoàn tất Epic 5: Tương tác Audio và Tính năng chia sẻ.
+* Nghiệm thu và bàn giao tài liệu kỹ thuật.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Task 2.2 (*Story 5-4*): Triển khai Audio Podcast <br>&emsp; + Dùng LLM sinh kịch bản hội thoại JSON 2 chuyên gia | 03/07/2026 | 03/07/2026 | LLM Prompting |
+| 3 | - Tích hợp Text-to-Speech (Google Cloud TTS / OpenAI Audio) sinh file MP3 cho 2 giọng nam/nữ <br> - Lưu MP3 vào S3 | 04/07/2026 | 04/07/2026 | TTS API Docs |
+| 4 | - Task 2.3 (*Story 5-5*): Tạo trang chơi trắc nghiệm công khai `fe/app/share/quiz/[quizId]` <br> - Mở quyền API read-only cho route chia sẻ | 05/07/2026 | 05/07/2026 | Next.js App Router |
+| 5 | - Tối ưu UI trang chơi Quiz chia sẻ trên mobile, không yêu cầu đăng nhập | 06/07/2026 | 06/07/2026 | Tailwind CSS |
+| 6 | - Chạy Playwright E2E Test toàn bộ hệ thống <br> - Đóng gói dự án và hoàn thiện tài liệu Handover | 07/07/2026 | 07/07/2026 | Playwright Test |
 
 ### Kết quả đạt được tuần 12:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Tính năng tự sinh Podcast học thuật 2 giọng đọc hoàn thiện, tạo trải nghiệm nghe thú vị.
+* Người dùng đã có thể share link Quiz public cho bạn bè.
+* Dự án Luminary hoàn tất xuất sắc theo thiết kế ban đầu, toàn bộ kiến trúc Serverless hoạt động ổn định trên môi trường Production.

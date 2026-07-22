@@ -5,53 +5,24 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
 
 
 ### Week 1 Objectives:
+* Read and understand onboarding documentation for the VietAI Scholar (Luminary) project.
+* Set up the local development environment for both Frontend (Next.js) and Backend (Node.js, AWS CDK).
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
-
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+### Tasks to Deploy This Week:
+| Day | Task | Start Date | Completion Date | Documentation Source |
+| --- | --- | --- | --- | --- |
+| 2 | - Read and understand Luminary's Product Overview <br> - Grasp the Monorepo system architecture (fe/ and be/) | 17/04/2026 | 17/04/2026 | Onboarding Documentation |
+| 3 | - Set up Frontend environment: <br>&emsp; + Install Node.js 20.x <br>&emsp; + Initialize Next.js (16.2.7) App Router <br>&emsp; + Install Tailwind CSS v4 | 18/04/2026 | 18/04/2026 | Next.js Docs, Tailwind Docs |
+| 4 | - Set up Backend environment: <br>&emsp; + Install & configure AWS CLI <br>&emsp; + Initialize AWS CDK project using TypeScript | 19/04/2026 | 19/04/2026 | AWS CDK Docs |
+| 5 | - Install Frontend core libraries: `katex`, `mermaid`, `next-auth` <br> - Run Playwright to get familiar with E2E Testing | 20/04/2026 | 20/04/2026 | Playwright Docs |
+| 6 | - Install Backend core libraries: `@google/generative-ai`, `groq-sdk`, `@qdrant/js-client-rest` <br> - Configure Jest tests for Backend | 21/04/2026 | 21/04/2026 | Npm Docs |
 
 ### Week 1 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Mastered the core concept of Luminary: An AI-integrated smart bilingual workspace.
+* Successfully configured AWS CLI and initialized the Monorepo project folder structure.
+* Fully installed all required packages for both Frontend and Backend.
+* Successfully ran the application in the local environment along with basic test suites.
