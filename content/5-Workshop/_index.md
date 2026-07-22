@@ -23,3 +23,4 @@ This hands-on lab will guide you through the step-by-step deployment of the Nigh
 9. [EC2 Deployment, ALB, Target Group, and End-to-End Testing](5.9/)
 10. [CloudFront, WAF, Monitoring, and Governance](5.10/)
 11. [Resource Cleanup](5.11/)
+12. [Demo](5.12/)

@@ -27,3 +27,4 @@ Bài thực hành này sẽ hướng dẫn bạn tự tay triển khai dự án 
 9. [Deploy EC2, ALB, Target Group và kiểm thử end-to-end](5.9/)
 10. [CloudFront, WAF, Monitoring và quản trị](5.10/)
 11. [Dọn dẹp tài nguyên](5.11/)
+12. [Demo](5.12/)
